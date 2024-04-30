@@ -16,7 +16,6 @@ const postGetAllSchema = {
                     tags : {type : "array"},
                     reaction : {type : "number"}
                 },
-                required : ["id", "title", "body"]
             },
             maxItems : 30
         },

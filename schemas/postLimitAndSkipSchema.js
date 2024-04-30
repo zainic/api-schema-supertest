@@ -8,7 +8,7 @@ const postLimitAndSkipSchema = {
                 properties : {
                     id : {
                         type : "number",
-                        minimum : 10,
+                        exclusiveMinimum : 10,
                     },
                     title : {type : "string"},
                     userId : {type : "number"},
