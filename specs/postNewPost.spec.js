@@ -12,9 +12,9 @@ const request = supertest('https://dummyjson.com')
 
 it("Posts New Post Schema Test", async () => {
     const newPost = {
-        id: 5,
+        id: 3,
         title: 'Testing',
-        userId: 10
+        userId: 4
     }
     const res = await request.post('/posts/add').send(newPost)
     expect(res.body).to.be.jsonSchema(postNewPostSchema)
