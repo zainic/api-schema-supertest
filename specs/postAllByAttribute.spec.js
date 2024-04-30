@@ -13,4 +13,7 @@ const request = supertest('https://dummyjson.com')
 it("Posts All By Attribute Schema Test", async () => {
     const res = await request.get('/posts/user/5')
     expect(res.body).to.be.jsonSchema(postAllByAttributeSchema)
+    for (let user of res.body.posts) {
+        expect(user.userId).to.equal(5)
+    }
 })

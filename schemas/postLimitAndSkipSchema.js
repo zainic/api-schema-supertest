@@ -16,6 +16,7 @@ const postLimitAndSkipSchema = {
                 },
                 required : ["id", "title", "reactions", "userId"]
             },
+            maxItems : 10
         },
         total: {type : "number"},
         skip: {type : "number"},
