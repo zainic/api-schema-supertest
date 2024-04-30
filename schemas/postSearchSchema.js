@@ -1,4 +1,4 @@
-const postGetAllSchema = {
+const postSearchSchema = {
     type : "object",
     properties : {
         posts : {
@@ -10,6 +10,7 @@ const postGetAllSchema = {
                     title : {type : "string"},
                     body : {
                         type : "string",
+                        // pattern : "^.*love.*$",
                         minLength : 20
                     },
                     userId : {type : "number"},
@@ -26,4 +27,4 @@ const postGetAllSchema = {
     }
 }
 
-export default postGetAllSchema
+export default postSearchSchema

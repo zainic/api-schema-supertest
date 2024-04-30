@@ -10,7 +10,8 @@ const postGetSingleSchema = {
         userId : {type : "number"},
         tags : {type : "array"},
         reaction : {type : "number"}
-    }
+    },
+    required : ["id", "title", "body"]
 }
 
 export default postGetSingleSchema
