@@ -1,4 +1,4 @@
-const postGetSingleSchema = {
+const postNewPostSchema = {
     type : "object",
     properties : {
         id : {type : "number"},
@@ -16,4 +16,4 @@ const postGetSingleSchema = {
     },
 }
 
-export default postGetSingleSchema
+export default postNewPostSchema
